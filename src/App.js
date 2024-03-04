@@ -5,9 +5,20 @@ import "./styles.css";
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="App">
       <Header />
       <WeatherForm />
+      <footer>
+        This project is coded by Alexa Cacchiola and is {" "}
+        <a
+          href="https://github.com/codergirlshecodes/React-App"
+          target="_blank"
+          rel="noopener noreferrer" 
+        >
+          open-sourced on Github
+
+        </a>
+      </footer>
     </div>
   );
 }
