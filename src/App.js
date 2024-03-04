@@ -1,13 +1,15 @@
 import React from "react";
-import Header from "./header";
+import "./weather"
 import WeatherForm from "./weatherform";
+
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <div className="container">
       <WeatherForm />
+
       <footer>
         This project is coded by Alexa Cacchiola and is {" "}
         <a
@@ -19,6 +21,7 @@ function App() {
 
         </a>
       </footer>
+      </div>
     </div>
   );
 }
