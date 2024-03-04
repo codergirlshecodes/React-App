@@ -1,6 +1,6 @@
 import React from "react";
-import "./weather"
 import WeatherForm from "./weatherform";
+
 
 import "./styles.css";
 
@@ -9,10 +9,9 @@ function App() {
     <div className="App">
       <div className="container">
       <WeatherForm />
-
-      <footer>
+      <footer className="footer">
         This project is coded by Alexa Cacchiola and is {" "}
-        <a
+        <a 
           href="https://github.com/codergirlshecodes/React-App"
           target="_blank"
           rel="noopener noreferrer" 

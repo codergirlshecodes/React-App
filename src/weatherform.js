@@ -63,23 +63,30 @@ function WeatherForm() {
   return (
     <div className="weather-form-container">
       <div className="weather-form">
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Enter city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            className="input"
-          />
-          <button className="button">Search</button>
-        </div>
-
-        {weatherData && (
-          <div className="additional-info">
-            <p>Precipitation: {weatherData.clouds.all}%</p>
-            <p>Wind: {weatherData.wind.speed} km/h</p>
+        <div className="Weather">
+          <form className="search-form">
+            <input type="search" placeholder="Enter a city.." className="form-control" />
+            <input type="submit" value="Search" className="btn btn-primary" />
+          </form>
+          <h1>Tampa</h1>
+          <ul>
+            <li>Friday 02:00</li>
+            <li>Sunny</li>
+          </ul>
+          <div className="row">
+            <div className="col-6">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="clear" />
+              21°C
+            </div>
+            <div className="col-6">
+              <ul>
+                <li>Precipitation:0%</li>
+                <li>Humidity: 85%</li>
+                <li>Wind: 8km/h</li>
+              </ul>
+            </div>
           </div>
-        )}
+        </div>
 
         {weatherData && weatherData.daily && (
           <div className="forecast">
